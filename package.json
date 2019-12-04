@@ -1,0 +1,35 @@
+{
+  "name": "bc-election.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkpgdjk/bc-election.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pkpgdjk/bc-election.github.io/issues"
+  },
+  "homepage": "https://github.com/pkpgdjk/bc-election.github.io#readme",
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "ganache-cli": "^6.7.0",
+    "mocha": "^6.2.2",
+    "solc": "^0.4.25",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.2.4"
+  },
+  "scripts": {
+    "test": "mocha",
+    "compile": "node ./ethereum/compile",
+    "deploy-local": "export DEPLOY=LOCAL && node ./ethereum/deploy",
+    "deploy": "export DEPLOY=RINKEBY && node ./ethereum/deploy",
+    "web": "python -m SimpleHTTPServer 8888"
+  }
+}
